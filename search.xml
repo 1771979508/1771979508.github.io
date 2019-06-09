@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[玖]]></title>
+    <title><![CDATA[ss科学上网]]></title>
     <url>%2F2019%2F06%2F09%2Fss%E4%B8%80%E9%94%AE%E6%90%AD%E5%BB%BA%2F</url>
     <content type="text"><![CDATA[只是记录一下 1234567891011121314先安装git yum -y install git克隆项目 git clone -b master https://github.com/flyzy2005/ss-fly设置密码和端口 ss-fly/ss-fly.sh -i flyzy2005.com 1024加速 ss-fly/ss-fly.sh –bbr查看是否启动加速 sysctl net.ipv4.tcp_available_congestion_control]]></content>
       <categories>
