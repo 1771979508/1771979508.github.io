@@ -103,18 +103,24 @@
 
 
 
-  <meta name="description" content="路漫漫">
+  <meta name="description" content="图的相关知识以及用递归实现的一些算法">
 <meta name="keywords" content="schedule,execute">
 <meta property="og:type" content="article">
-<meta property="og:title" content="鋈">
-<meta property="og:url" content="https://www.jokerq.com/2019/05/19/鋈/index.html">
+<meta property="og:title" content="图和递归">
+<meta property="og:url" content="https://www.jokerq.com/2019/06/02/图和递归/index.html">
 <meta property="og:site_name" content="小丑的世界">
-<meta property="og:description" content="路漫漫">
+<meta property="og:description" content="图的相关知识以及用递归实现的一些算法">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-26T04:03:48.294Z">
+<meta property="og:image" content="https://www.jokerq.com/images/noDirectPic.jpg">
+<meta property="og:image" content="https://www.jokerq.com/images/directPic.jpg">
+<meta property="og:image" content="https://www.jokerq.com/images/save.jpg">
+<meta property="og:image" content="https://www.jokerq.com/images/table.jpg">
+<meta property="og:image" content="https://www.jokerq.com/images/shortestLength.png">
+<meta property="og:updated_time" content="2019-06-16T08:49:41.907Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="鋈">
-<meta name="twitter:description" content="路漫漫">
+<meta name="twitter:title" content="图和递归">
+<meta name="twitter:description" content="图的相关知识以及用递归实现的一些算法">
+<meta name="twitter:image" content="https://www.jokerq.com/images/noDirectPic.jpg">
 
 
 
@@ -122,7 +128,7 @@
 
   
   
-  <link rel="canonical" href="https://www.jokerq.com/2019/05/19/鋈/">
+  <link rel="canonical" href="https://www.jokerq.com/2019/06/02/图和递归/">
 
 
 
@@ -132,7 +138,7 @@
   };
 </script>
 
-  <title>鋈 | 小丑的世界</title>
+  <title>图和递归 | 小丑的世界</title>
   
 
 
@@ -268,7 +274,7 @@
       
     
 
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">3</span></a>
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">4</span></a>
 
   </li>
         
@@ -287,7 +293,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">9</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">10</span></a>
 
   </li>
         
@@ -387,7 +393,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.jokerq.com/2019/05/19/鋈/">
+    <link itemprop="mainEntityOfPage" href="https://www.jokerq.com/2019/06/02/图和递归/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="逍惆">
@@ -404,7 +410,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">鋈
+          <h1 class="post-title" itemprop="name headline">图和递归
 
               
             
@@ -430,7 +436,7 @@
                 
               
 
-              <time title="创建时间：2019-05-19 11:19:14" itemprop="dateCreated datePublished" datetime="2019-05-19T11:19:14+08:00">2019-05-19</time>
+              <time title="创建时间：2019-06-02 11:19:14" itemprop="dateCreated datePublished" datetime="2019-06-02T11:19:14+08:00">2019-06-02</time>
             
 
             
@@ -447,7 +453,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-05-26 12:03:48" itemprop="dateModified" datetime="2019-05-26T12:03:48+08:00">2019-05-26</time>
+                <time title="修改时间：2019-06-16 16:49:41" itemprop="dateModified" datetime="2019-06-16T16:49:41+08:00">2019-06-16</time>
               
             
           </span>
@@ -483,8 +489,8 @@
                 </span>
             
                 <span class="post-meta-item-text">评论数：</span>
-                <a href="/2019/05/19/鋈/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/05/19/鋈/" itemprop="commentCount"></span>
+                <a href="/2019/06/02/图和递归/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/06/02/图和递归/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -519,19 +525,19 @@
       
 
       
-        <h2 id="路漫漫"><a href="#路漫漫" class="headerlink" title="路漫漫"></a><strong>路漫漫</strong></h2><a id="more"></a>   
-<h3 id="写在开始"><a href="#写在开始" class="headerlink" title="写在开始"></a><strong>写在开始</strong></h3><p>刷题和sql在以后就只记录一些有意思的题目或分析；如：<br>关于几个常见算法的时间复杂度分析案例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">(1).交换i和j的内容</span><br><span class="line">    sum=0;  (一次)</span><br><span class="line">    for(int i=0;i&lt;=n;i++&gt;)&#123; (n次)</span><br><span class="line">        for(j=1;j&lt;=n;j++&gt;)&#123; (n^2次)</span><br><span class="line">            sum++;  (n^2次)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">则时间复杂度T(n) = 1+n+2*n^2 取最高次的影响则为 T(n) = O(n^2)</span><br></pre></td></tr></table></figure></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">(2).  for (i=1;i&lt;n;i++)&#123;</span><br><span class="line">        y=y+1;         ①   </span><br><span class="line">        for (j=0;j&lt;=(2*n);j++) (因为j能取到2n所以为：2n+1)   </span><br><span class="line">            x++;        ②      </span><br><span class="line">      &#125; </span><br><span class="line">      ① 的时间复杂度是(n-1)、② 的时间复杂度是(n-1)(2n+1)</span><br><span class="line">      则时间复杂度为T(n) = O(n-1)+(n-1)(2n+1) = O(n^2)</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">(3). a=0;</span><br><span class="line">     b=1;   ①   (1次)</span><br><span class="line">     for(i=1;i&lt;=n;i++)&#123;    ②    (n+1次)</span><br><span class="line">         s=a+b; ③   (n次)</span><br><span class="line">         b=a;   ④   (n次)</span><br><span class="line">         a=s;   ⑤   (n次)</span><br><span class="line">     &#125;</span><br><span class="line">     则时间复杂度为：T(n) = 4n = O(n) 为线性的函数</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">(4). i=1;   ①   1</span><br><span class="line">     while(i&lt;=n&gt;)&#123;</span><br><span class="line">         i=i*2; ②   2^f(n)&lt;=n;f(n)&lt;=log2n</span><br><span class="line">     &#125;  </span><br><span class="line">    T(n)=O(log2n)  </span><br><span class="line">    这里频次本身是一个函数，则可求得函数本身f(n)的值</span><br></pre></td></tr></table></figure>
-<h3 id="本周实现算法"><a href="#本周实现算法" class="headerlink" title="本周实现算法"></a><strong>本周实现算法</strong></h3><ul>
-<li><p>1.用两个栈实现队列 - 完成基本的出队和入队的功能</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">/*基本分析：由于栈和队列的两种结构是完全相反的*/</span><br><span class="line">    public class ImplQueueByStack&#123;</span><br><span class="line">        </span><br><span class="line">        // 定义两个栈</span><br><span class="line">        Stack&lt;Integer&gt; stackA = new Stack&lt;Integer&gt;();</span><br><span class="line">        Stack&lt;Integer&gt; stackB = new Stack&lt;Integer&gt;();</span><br><span class="line"></span><br><span class="line">        // 定义入队的方法</span><br><span class="line">        public void push(int node)&#123;</span><br><span class="line">            // 将栈A当作队列的入口</span><br><span class="line">            stackA.push(node);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        // 队列的出队方法</span><br><span class="line">        public int pop() throws Exception&#123;</span><br><span class="line">            if(stackA.isEmpty() &amp;&amp; stackB.isEmpty())&#123;</span><br><span class="line">                throw new Exception(&quot;队列为空&quot;);</span><br><span class="line">            &#125;</span><br><span class="line">        // 将栈B当作队列的出口,拿到栈A中的最后一个元素进行出栈</span><br><span class="line">            if(stackB.isEmpty())&#123; </span><br><span class="line">                // 如果栈B为空的话，遍历栈A往栈B中添加元素</span><br><span class="line">                while(!stackA.isEmpty())&#123;</span><br><span class="line">                    stackB.push(stackA.pop());</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            // 添加返回值</span><br><span class="line">            return stackB.pop();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        // 测试方法</span><br><span class="line">        public static void main(String[] args) throws Exception &#123;</span><br><span class="line">            ImplQueueByStack implQueueByStack = new ImplQueueByStack();</span><br><span class="line">            implQueueByStack.push(2);</span><br><span class="line">            implQueueByStack.push(4);</span><br><span class="line">            implQueueByStack.push(0);</span><br><span class="line">            System.out.println(implQueueByStack.pop());</span><br><span class="line">            implQueueByStack.push(10);</span><br><span class="line">            implQueueByStack.push(20);</span><br><span class="line">            System.out.println(implQueueByStack.pop());</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>2.用两个队列实现栈 - 完成基本的出队和入队的功能</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line">    public class ImplStackByQueue&#123;</span><br><span class="line">        </span><br><span class="line">        // 定义两个队列</span><br><span class="line">        Queue&lt;Integer&gt; queueA = new Queue&lt;Integer&gt;();</span><br><span class="line">        Queue&lt;Integer&gt; queueB = new Queue&lt;Integer&gt;();</span><br><span class="line">        </span><br><span class="line">        //定义队列的入队方法</span><br><span class="line">        public void push(int node)&#123;</span><br><span class="line">            // 如果队列A为空，则队列B Push</span><br><span class="line">            if(queueA.isEmpty())&#123;</span><br><span class="line">                queueB.push(node);</span><br><span class="line">            &#125;</span><br><span class="line">            if(queueB.isEmpty())&#123;</span><br><span class="line">                queueA.push(node);</span><br><span class="line">            &#125;</span><br><span class="line">            // 如果两个队列均为空的话，使用队列A优先</span><br><span class="line">            if(queueA.isEmpty() &amp;&amp; queueB.isEmpty())&#123;</span><br><span class="line">                queueA.push(node);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        // 定义出队的方法</span><br><span class="line">        public int pop() throws Exception&#123;</span><br><span class="line">            if(queueA.isEmpty() &amp;&amp; queueB.isEmpty())&#123;</span><br><span class="line">                throw new Exception(&quot;栈为空&quot;);</span><br><span class="line">            &#125;</span><br><span class="line">// 如果queueA为空，queueB不为空，将queueB的元素依次放入queueA，直到queueB中最后一个元素弹出</span><br><span class="line">            if(!queueA.isEmpty())&#123;</span><br><span class="line">                while(queueB.size()&gt;1)&#123;</span><br><span class="line">                    queueA.add(queueB.poll());</span><br><span class="line">                &#125;</span><br><span class="line">                return queueB.poll();</span><br><span class="line">            &#125;</span><br><span class="line">            if(!queueB.isEmpty())&#123;</span><br><span class="line">                while(queueA.size()&gt;1)&#123;</span><br><span class="line">                    queueB.add(queueA.poll());</span><br><span class="line">                &#125;</span><br><span class="line">                return queueA.poll();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        public static void main(String[] args) throws Exception &#123;</span><br><span class="line">            ImplStackByQueue implStackByQueue = new ImplStackByQueue();</span><br><span class="line">            ImplStackByQueue.push(2);</span><br><span class="line">            ImplStackByQueue.push(4);</span><br><span class="line">            ImplStackByQueue.push(0);</span><br><span class="line">            System.out.println(ImplStackByQueue.pop());</span><br><span class="line">            ImplStackByQueue.push(10);</span><br><span class="line">            ImplStackByQueue.push(20);</span><br><span class="line">            System.out.println(ImplStackByQueue.pop());</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
+        <h2 id="图的相关知识以及用递归实现的一些算法"><a href="#图的相关知识以及用递归实现的一些算法" class="headerlink" title="图的相关知识以及用递归实现的一些算法"></a><strong>图的相关知识以及用递归实现的一些算法</strong></h2><a id="more"></a>   
+<h3 id="写在开始"><a href="#写在开始" class="headerlink" title="写在开始"></a><strong>写在开始</strong></h3><p>本周共实现算法：<font color="blue"><a href="https://github.com/1771979508/dataStructure" target="_blank" rel="noopener">温故而知新</a></font><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">数组的二分查找  </span><br><span class="line">矩形递归  </span><br><span class="line">二分查找实现旋转数组的最小值 - 两种实现方式  </span><br><span class="line">非递归方式的二叉树的层次遍历以及中序遍历</span><br></pre></td></tr></table></figure></p>
+<p>&#160; &#160; &#160; &#160;现在渐渐开始养成了每天都往仓库提交点什么，无论提交的是理论的知识还是实现的代码，总归是记录成长的见证。</p>
+<h3 id="场景"><a href="#场景" class="headerlink" title="场景"></a><strong>场景</strong></h3><p>我们小时候玩的迷宫，走到死胡同返回再去寻找有出路的新节点，尝试新的路径，往复循环直到找到出口，那么它是怎么记录下来路径，又是怎么去寻找到新节点的？<br>微博和微信，用户之间能够互相关注和互相添加好友；<br>抖音等系统机制能给你推荐你的好友，以及地图的最远和最近等机制怎么实现的？</p>
+<h3 id="图"><a href="#图" class="headerlink" title="图"></a><strong>图</strong></h3><p>上周认识到了<code>图</code>这种数据结构，发现这种数据结构真的是好啊。然后我越来越真切地感受到，很多知识都是基于生活演变而来，仔细一想很多知识不就是为了解决生活中问题的么。</p>
+<h4 id="什么是图"><a href="#什么是图" class="headerlink" title="什么是图?"></a><strong>什么是图?</strong></h4><p>图由顶点集合与描述各顶点之间边组成的一种数据结构<br>图分为<code>有向</code>和<code>无向</code><br>如下图是有向图和无向图两种：<br><img src="https://www.jokerq.com/images/noDirectPic.jpg" alt="无向图"><br><img src="https://www.jokerq.com/images/directPic.jpg" alt="有向图"><br>我们都知道在使用的地图(无论是百度地图还是高德地图)它们都有帮我识别远近的，以及推荐最优解的功能<br><code>那是怎么实现的？</code><br>事实上，这里引入了一个概念<code>带权图</code>:在每个顶点之间的边上都会有一个权重(weight)，通过它的和，会知道那条路径会更短以及用时最快  </p>
+<h4 id="图的储存"><a href="#图的储存" class="headerlink" title="图的储存"></a><strong>图的储存</strong></h4><p>图存储方式有<code>链表+数组</code>和<code>邻接矩阵</code><br><img src="https://www.jokerq.com/images/save.jpg" alt="邻接矩阵"><br><img src="https://www.jokerq.com/images/table.jpg" alt="链表+数组"><br><code>储存的过程</code><br><img src="https://www.jokerq.com/images/shortestLength.png" alt="求解最短路径图"><br>如上图，需要求解时间最少，距离最短，权值最小的最短路径<br>通过一种算法：<strong><code>狄克斯特拉算法</code></strong><br>上图中共有8个地方，初始用如下方法记录 - 暂且认为从起点到v2-v8的距离均为<code>-1</code>(无穷大)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">S数组   v1</span><br><span class="line">T数组   v2  v3  v4  v5  v6  v7  v8</span><br><span class="line">前一个节点  当前节点    权重</span><br><span class="line">             v2        -1</span><br><span class="line">             v3        -1</span><br><span class="line">             v4        -1</span><br><span class="line">             v5        -1</span><br><span class="line">             v6        -1</span><br><span class="line">             v7        -1</span><br><span class="line">             v8        -1</span><br></pre></td></tr></table></figure></p>
+<p><strong><code>经过最终的运算得到如下数组:</code></strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">s数组   v1 v2  v3  v4  v6  v7  v5  v8</span><br><span class="line">t数组</span><br><span class="line">前一个节点  当前节点    权重</span><br><span class="line">    v1       v2         3</span><br><span class="line">    v2       v3         4</span><br><span class="line">    v3       v4         5</span><br><span class="line">    v6       v5         8</span><br><span class="line">    v3       v6         6</span><br><span class="line">    v6       v7         7</span><br><span class="line">    v7       v8         12</span><br><span class="line"></span><br><span class="line">最短路径路线    v1  v2  v3  v6  v7  v8  </span><br><span class="line">   12              3   1   2   1   5</span><br><span class="line">下面的数字代表的是：各个节点之间的距离 </span><br><span class="line"></span><br><span class="line">                【最终结果表】</span><br></pre></td></tr></table></figure></p>
+<p>从上面那种表可以看出来，我们能够得到从v1到v2、v3等各个点之间的最短距离；<br><strong><code>狄克斯特拉算法实现过程：</code></strong><br>首先是：<code>v1</code>节点到最近的三个节点<code>v2、v3、v4</code>以及他们的权重是否大于<code>初始值(-1)</code>。如果大于则进行更新,所以得到如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">v1节点：</span><br><span class="line"></span><br><span class="line">    前一个节点  当前节点    权重    上一个节点到当前节点的权重值</span><br><span class="line">      v1         v2        -1               3</span><br><span class="line">      v1         v3        -1               5</span><br><span class="line">      v1         v4        -1               6</span><br><span class="line">                 v5        -1</span><br><span class="line">                 v6        -1</span><br><span class="line">                 v7        -1</span><br><span class="line">                 v8        -1</span><br><span class="line"></span><br><span class="line">更新完了之后：将原本的`-1`替换掉最新的权重值, 如果[权重小于原本的权重]则进行替换</span><br><span class="line"></span><br><span class="line">    前一个节点  当前节点    权重    </span><br><span class="line">      v1         v2        3               </span><br><span class="line">      v1         v3        5               </span><br><span class="line">      v1         v4        6               </span><br><span class="line">                 v5        -1</span><br><span class="line">                 v6        -1</span><br><span class="line">                 v7        -1</span><br><span class="line">                 v8        -1</span><br><span class="line"></span><br><span class="line">数组表一：    </span><br><span class="line">    s数组   v1  v2</span><br><span class="line">    t数组       v3  v4  v5  v6  v7  v8</span><br><span class="line"></span><br><span class="line">                        【表格一】</span><br></pre></td></tr></table></figure></p>
+<p>然后接下来，在【上一个节点到当前节点的权重值】这一栏中找到<code>最小</code>的值，即<code>[3]</code> - <code>对应当前节点最小的值：v2</code> ，得到<code>【表格一】</code>中的数组表一;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">v1能到达的顶点已经走完了，现在看v2的能到达的顶点路径</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">v2节点 - 能到最近节点的图 - (v5、v6、v3) - </span><br><span class="line">         则路径为[v1-v2-v3]、[v1-v2-v5]、[v1-v2-v6]</span><br><span class="line"></span><br><span class="line">    前一个节点  当前节点   权重     上一个节点到当前节点的权重值</span><br><span class="line">        v1        v2       3                </span><br><span class="line">        v1        v3       5                1</span><br><span class="line">        v1        v4       6            </span><br><span class="line">                  v5       -1 </span><br><span class="line">                  v6       -1               7</span><br><span class="line">                  v7       -1               4</span><br><span class="line">                  v8       -1     </span><br><span class="line"></span><br><span class="line">更新完了之后：将原本的`-1`替换掉最新的权重值，如果[权重小于原本的权重]则进行替换，以及[前一个节点的名称]</span><br><span class="line"></span><br><span class="line">    前一个节点  当前节点   权重     </span><br><span class="line">        v1        v2       3                </span><br><span class="line">        v2        v3       1+3                </span><br><span class="line">        v1        v4       6            </span><br><span class="line">        v2        v5       7+3 </span><br><span class="line">        v2        v6       4+3               </span><br><span class="line">                  v7       -1               </span><br><span class="line">                  v8       -1   </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    数组表二：</span><br><span class="line">        s数组   v1  v2  v3</span><br><span class="line">        t数组           v4  v5  v6  v7  v8</span><br><span class="line"></span><br><span class="line">                             【表格二】</span><br></pre></td></tr></table></figure>
+<p>接下来就是循环前面的操作，直到走完v1-v8的所有路径，得到最终结果表<br>详情可以了解 &nbsp;&nbsp; <font color="blue"><a href="https://www.bilibili.com/video/av44972828/?p=16" target="_blank" rel="noopener">b站上面尚学堂的数据结构与算法</a></font></p>
+<h3 id="申明"><a href="#申明" class="headerlink" title="申明"></a><strong>申明</strong></h3><p>文章中的图片均非本人的原创，转自极客时间-王争专栏的图，若有打扰请联系本人进行删除;</p>
 
       
     </div>
@@ -621,8 +627,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/05/12/涘/" rel="next" title="涘">
-                <i class="fa fa-chevron-left"></i> 涘
+              <a href="/2019/05/26/递归/" rel="next" title="递归">
+                <i class="fa fa-chevron-left"></i> 递归
               </a>
             
           </div>
@@ -631,8 +637,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/05/26/澑/" rel="prev" title="澑">
-                澑 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/06/07/魃/" rel="prev" title="魃">
+                魃 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -708,7 +714,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -731,7 +737,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">3</span>
+                      
+                    
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -842,7 +850,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#路漫漫"><span class="nav-number">1.</span> <span class="nav-text">路漫漫</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#写在开始"><span class="nav-number">1.1.</span> <span class="nav-text">写在开始</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#本周实现算法"><span class="nav-number">1.2.</span> <span class="nav-text">本周实现算法</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#图的相关知识以及用递归实现的一些算法"><span class="nav-number">1.</span> <span class="nav-text">图的相关知识以及用递归实现的一些算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#写在开始"><span class="nav-number">1.1.</span> <span class="nav-text">写在开始</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#场景"><span class="nav-number">1.2.</span> <span class="nav-text">场景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图"><span class="nav-number">1.3.</span> <span class="nav-text">图</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#什么是图"><span class="nav-number">1.3.1.</span> <span class="nav-text">什么是图?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#图的储存"><span class="nav-number">1.3.2.</span> <span class="nav-text">图的储存</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#申明"><span class="nav-number">1.4.</span> <span class="nav-text">申明</span></a></li></ol></li></ol></div>
             
 
           </div>

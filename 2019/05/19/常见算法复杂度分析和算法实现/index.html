@@ -103,20 +103,18 @@
 
 
 
-  <meta name="description" content="做一个执行者而不是计划者">
+  <meta name="description" content="常见算法的时间复杂度分析和栈实现队列、队列实现栈">
 <meta name="keywords" content="schedule,execute">
 <meta property="og:type" content="article">
-<meta property="og:title" content="涘">
-<meta property="og:url" content="https://www.jokerq.com/2019/05/12/涘/index.html">
+<meta property="og:title" content="常见算法复杂度分析和算法实现">
+<meta property="og:url" content="https://www.jokerq.com/2019/05/19/常见算法复杂度分析和算法实现/index.html">
 <meta property="og:site_name" content="小丑的世界">
-<meta property="og:description" content="做一个执行者而不是计划者">
+<meta property="og:description" content="常见算法的时间复杂度分析和栈实现队列、队列实现栈">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://www.jokerq.com/images/exercise-2019-05-12.png">
-<meta property="og:updated_time" content="2019-05-19T03:13:07.941Z">
+<meta property="og:updated_time" content="2019-06-16T08:47:09.080Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="涘">
-<meta name="twitter:description" content="做一个执行者而不是计划者">
-<meta name="twitter:image" content="https://www.jokerq.com/images/exercise-2019-05-12.png">
+<meta name="twitter:title" content="常见算法复杂度分析和算法实现">
+<meta name="twitter:description" content="常见算法的时间复杂度分析和栈实现队列、队列实现栈">
 
 
 
@@ -124,7 +122,7 @@
 
   
   
-  <link rel="canonical" href="https://www.jokerq.com/2019/05/12/涘/">
+  <link rel="canonical" href="https://www.jokerq.com/2019/05/19/常见算法复杂度分析和算法实现/">
 
 
 
@@ -134,7 +132,7 @@
   };
 </script>
 
-  <title>涘 | 小丑的世界</title>
+  <title>常见算法复杂度分析和算法实现 | 小丑的世界</title>
   
 
 
@@ -270,7 +268,7 @@
       
     
 
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">3</span></a>
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">4</span></a>
 
   </li>
         
@@ -289,7 +287,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">9</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">10</span></a>
 
   </li>
         
@@ -389,7 +387,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.jokerq.com/2019/05/12/涘/">
+    <link itemprop="mainEntityOfPage" href="https://www.jokerq.com/2019/05/19/常见算法复杂度分析和算法实现/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="逍惆">
@@ -406,7 +404,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">涘
+          <h1 class="post-title" itemprop="name headline">常见算法复杂度分析和算法实现
 
               
             
@@ -432,7 +430,7 @@
                 
               
 
-              <time title="创建时间：2019-05-12 11:19:14" itemprop="dateCreated datePublished" datetime="2019-05-12T11:19:14+08:00">2019-05-12</time>
+              <time title="创建时间：2019-05-19 11:19:14" itemprop="dateCreated datePublished" datetime="2019-05-19T11:19:14+08:00">2019-05-19</time>
             
 
             
@@ -449,7 +447,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-05-19 11:13:07" itemprop="dateModified" datetime="2019-05-19T11:13:07+08:00">2019-05-19</time>
+                <time title="修改时间：2019-06-16 16:47:09" itemprop="dateModified" datetime="2019-06-16T16:47:09+08:00">2019-06-16</time>
               
             
           </span>
@@ -485,8 +483,8 @@
                 </span>
             
                 <span class="post-meta-item-text">评论数：</span>
-                <a href="/2019/05/12/涘/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/05/12/涘/" itemprop="commentCount"></span>
+                <a href="/2019/05/19/常见算法复杂度分析和算法实现/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/05/19/常见算法复杂度分析和算法实现/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -521,14 +519,19 @@
       
 
       
-        <h2 id="做一个执行者而不是计划者"><a href="#做一个执行者而不是计划者" class="headerlink" title="做一个执行者而不是计划者"></a><strong>做一个执行者而不是计划者</strong></h2><a id="more"></a>
-<h3 id="Beginning"><a href="#Beginning" class="headerlink" title="Beginning"></a><strong>Beginning</strong></h3><p>从上周开始写博客开始，我就开始计划了我后面每天要做的事情;目前已经开始执行了一周，然后到了周天的总结时间； </p>
-<h3 id="牛客网刷题"><a href="#牛客网刷题" class="headerlink" title="牛客网刷题"></a><strong>牛客网刷题</strong></h3><p>首先是每天早上在公交上刷Java基础题目，每天<img src="https://www.jokerq.com/images/exercise-2019-05-12.png" alt="10道选择题">，很惨呐😭；<br>可以看出来Java的基础真的很差劲，但是目前的阶段主要在补充一些数据结构与算法的知识，所以就每天早上挤公交的时候刷刷题，到下阶段着重看Java;<br><strong>总结：</strong>关于Java基础，我相信很多人和我一样，面象google编程；再就是看了源码但过了一段时间又忘记了，所以我选择了每天刷点题，着重提高对数据结构与算法的认知，希望几个月后我能得到自己的肯定；</p>
-<h3 id="数据结构与算法"><a href="#数据结构与算法" class="headerlink" title="数据结构与算法"></a><strong>数据结构与算法</strong></h3><p>这里刷的是剑指offer，虽然很多不懂,走的很慢，但慢慢磨总归是可以磨出来的;<br>这周主要做了两道算法题目：一道是：<code>输入一个链表，按链表值从尾到头的顺序返回一个ArrayList</code>，另一道是：<code>输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。例如输入前序遍历序列{1,2,4,7,3,5,6,8}和中序遍历序列{4,7,2,1,5,3,8,6}，则重建二叉树并返回。</code>；<br>其中链表的那道题目：给我印象最深的就是通过<code>栈</code>结构来实现的，这里充分地利用了栈结构<strong>先入后出</strong>的特性；以及递归方法，这也让我再次体会到了递归的强大；<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">// 3.使用栈</span><br><span class="line">public ArrayList&lt;Integer&gt; printListFromTailToHeadStack(ListNode listNode)&#123;</span><br><span class="line">    Stack&lt;Integer&gt; stack = new Stack&lt;&gt;();</span><br><span class="line">    while(listNode != null)&#123;</span><br><span class="line">        stack.add(listNode.val);</span><br><span class="line">        listNode = listNode.next;</span><br><span class="line">    &#125;</span><br><span class="line">    ArrayList&lt;Integer&gt; ret = new ArrayList&lt;&gt;();</span><br><span class="line">    while(!stack.isEmpty())&#123;</span><br><span class="line">        ret.add(stack.pop());</span><br><span class="line">    &#125;</span><br><span class="line">    return ret;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">// 递归实现 - 把后面未遍历的当成一个整体，然后调用自己的方法，这样理解起来就很方便了</span><br><span class="line">LinkedList&lt;Integer&gt; linkedList = new LinkedList&lt;Integer&gt;();</span><br><span class="line">	public ArrayList&lt;Integer&gt; printListFromTailToHead(ListNode listNode) &#123;</span><br><span class="line">        ArrayList&lt;Integer&gt; ret = new ArrayList&lt;&gt;();</span><br><span class="line">		if(listNode != null)&#123;</span><br><span class="line">            ret.addAll(printListFromTailToHead(listNode.next));</span><br><span class="line">            ret.add(listNode.val);</span><br><span class="line">            //System.out.println(ret);</span><br><span class="line">        &#125;</span><br><span class="line">		</span><br><span class="line">		System.out.println(ret);</span><br><span class="line">		return ret;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<p>然后关于树:学习了树的结构以及二叉树<strong>深度优先遍历</strong>和<strong>广度有限遍历</strong>,其中<code>前序遍历</code>,<code>中序遍历</code>,<code>后序遍历</code>三种深度遍历的方式。<br>当然我自己根据题目给出的前两种遍历结构试着自己画了一下二叉树的结构，结果就是很容易把左边的树画出来，而右边的怎么都感觉不对劲；后面看了别人的思路也觉得画的有问题😚；可能还没有理解透彻，需要被再多折磨一下；<br><strong>总结</strong>：虽然算法在很多时候自己可能写不出来，但是硬着头皮去啃坚持一个阶段下来即使不能达到自己能随手写出来那种地步也会对整体的结构有一个比较清晰的脉络，值得深究；</p>
-<h3 id="关于SQL"><a href="#关于SQL" class="headerlink" title="关于SQL"></a><strong>关于SQL</strong></h3><p>同样是在下午吃完饭回来进行练习，SQL的练习要比我想象中进展的快：计划是每周5道左右，目前来看貌似已经超两倍的完成；感觉牛客的SQL练习不大能起效果:就目前练习的来看<code>基本都是两张表带点简单的条件以及排个序</code>没有达到我想要的效果，可也能没做到后面的题目；<br><strong>改善</strong>：针对次可能需要进行改变一下，增加<code>数据结构与算法</code>的看书时间，先看算法书再练习SQL；</p>
-<h3 id="阶段总结"><a href="#阶段总结" class="headerlink" title="阶段总结"></a><strong>阶段总结</strong></h3><p>目前来看，周一到周五基本能够完成上述的任务；<br>周六周天主要写小程序和写文章、看书等任务<br>周六和周天尚欠缺自制力，不能最大化的利用时间；希望能够有所改进；</p>
+        <h2 id="常见算法的时间复杂度分析和栈实现队列、队列实现栈"><a href="#常见算法的时间复杂度分析和栈实现队列、队列实现栈" class="headerlink" title="常见算法的时间复杂度分析和栈实现队列、队列实现栈"></a><strong>常见算法的时间复杂度分析和栈实现队列、队列实现栈</strong></h2><a id="more"></a>   
+<h3 id="写在开始"><a href="#写在开始" class="headerlink" title="写在开始"></a><strong>写在开始</strong></h3><p>刷题和sql在以后就只记录一些有意思的题目或分析；如：<br>关于几个常见算法的时间复杂度分析案例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">(1).交换i和j的内容</span><br><span class="line">    sum=0;  (一次)</span><br><span class="line">    for(int i=0;i&lt;=n;i++&gt;)&#123; (n次)</span><br><span class="line">        for(j=1;j&lt;=n;j++&gt;)&#123; (n^2次)</span><br><span class="line">            sum++;  (n^2次)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">则时间复杂度T(n) = 1+n+2*n^2 取最高次的影响则为 T(n) = O(n^2)</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">(2).  for (i=1;i&lt;n;i++)&#123;</span><br><span class="line">        y=y+1;         ①   </span><br><span class="line">        for (j=0;j&lt;=(2*n);j++) (因为j能取到2n所以为：2n+1)   </span><br><span class="line">            x++;        ②      </span><br><span class="line">      &#125; </span><br><span class="line">      ① 的时间复杂度是(n-1)、② 的时间复杂度是(n-1)(2n+1)</span><br><span class="line">      则时间复杂度为T(n) = O(n-1)+(n-1)(2n+1) = O(n^2)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">(3). a=0;</span><br><span class="line">     b=1;   ①   (1次)</span><br><span class="line">     for(i=1;i&lt;=n;i++)&#123;    ②    (n+1次)</span><br><span class="line">         s=a+b; ③   (n次)</span><br><span class="line">         b=a;   ④   (n次)</span><br><span class="line">         a=s;   ⑤   (n次)</span><br><span class="line">     &#125;</span><br><span class="line">     则时间复杂度为：T(n) = 4n = O(n) 为线性的函数</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">(4). i=1;   ①   1</span><br><span class="line">     while(i&lt;=n&gt;)&#123;</span><br><span class="line">         i=i*2; ②   2^f(n)&lt;=n;f(n)&lt;=log2n</span><br><span class="line">     &#125;  </span><br><span class="line">    T(n)=O(log2n)  </span><br><span class="line">    这里频次本身是一个函数，则可求得函数本身f(n)的值</span><br></pre></td></tr></table></figure>
+<h3 id="本周实现算法"><a href="#本周实现算法" class="headerlink" title="本周实现算法"></a><strong>本周实现算法</strong></h3><ul>
+<li><p>1.用两个栈实现队列 - 完成基本的出队和入队的功能</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">/*基本分析：由于栈和队列的两种结构是完全相反的*/</span><br><span class="line">    public class ImplQueueByStack&#123;</span><br><span class="line">        </span><br><span class="line">        // 定义两个栈</span><br><span class="line">        Stack&lt;Integer&gt; stackA = new Stack&lt;Integer&gt;();</span><br><span class="line">        Stack&lt;Integer&gt; stackB = new Stack&lt;Integer&gt;();</span><br><span class="line"></span><br><span class="line">        // 定义入队的方法</span><br><span class="line">        public void push(int node)&#123;</span><br><span class="line">            // 将栈A当作队列的入口</span><br><span class="line">            stackA.push(node);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        // 队列的出队方法</span><br><span class="line">        public int pop() throws Exception&#123;</span><br><span class="line">            if(stackA.isEmpty() &amp;&amp; stackB.isEmpty())&#123;</span><br><span class="line">                throw new Exception(&quot;队列为空&quot;);</span><br><span class="line">            &#125;</span><br><span class="line">        // 将栈B当作队列的出口,拿到栈A中的最后一个元素进行出栈</span><br><span class="line">            if(stackB.isEmpty())&#123; </span><br><span class="line">                // 如果栈B为空的话，遍历栈A往栈B中添加元素</span><br><span class="line">                while(!stackA.isEmpty())&#123;</span><br><span class="line">                    stackB.push(stackA.pop());</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            // 添加返回值</span><br><span class="line">            return stackB.pop();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        // 测试方法</span><br><span class="line">        public static void main(String[] args) throws Exception &#123;</span><br><span class="line">            ImplQueueByStack implQueueByStack = new ImplQueueByStack();</span><br><span class="line">            implQueueByStack.push(2);</span><br><span class="line">            implQueueByStack.push(4);</span><br><span class="line">            implQueueByStack.push(0);</span><br><span class="line">            System.out.println(implQueueByStack.pop());</span><br><span class="line">            implQueueByStack.push(10);</span><br><span class="line">            implQueueByStack.push(20);</span><br><span class="line">            System.out.println(implQueueByStack.pop());</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>2.用两个队列实现栈 - 完成基本的出队和入队的功能</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line">    public class ImplStackByQueue&#123;</span><br><span class="line">        </span><br><span class="line">        // 定义两个队列</span><br><span class="line">        Queue&lt;Integer&gt; queueA = new Queue&lt;Integer&gt;();</span><br><span class="line">        Queue&lt;Integer&gt; queueB = new Queue&lt;Integer&gt;();</span><br><span class="line">        </span><br><span class="line">        //定义队列的入队方法</span><br><span class="line">        public void push(int node)&#123;</span><br><span class="line">            // 如果队列A为空，则队列B Push</span><br><span class="line">            if(queueA.isEmpty())&#123;</span><br><span class="line">                queueB.push(node);</span><br><span class="line">            &#125;</span><br><span class="line">            if(queueB.isEmpty())&#123;</span><br><span class="line">                queueA.push(node);</span><br><span class="line">            &#125;</span><br><span class="line">            // 如果两个队列均为空的话，使用队列A优先</span><br><span class="line">            if(queueA.isEmpty() &amp;&amp; queueB.isEmpty())&#123;</span><br><span class="line">                queueA.push(node);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        // 定义出队的方法</span><br><span class="line">        public int pop() throws Exception&#123;</span><br><span class="line">            if(queueA.isEmpty() &amp;&amp; queueB.isEmpty())&#123;</span><br><span class="line">                throw new Exception(&quot;栈为空&quot;);</span><br><span class="line">            &#125;</span><br><span class="line">// 如果queueA为空，queueB不为空，将queueB的元素依次放入queueA，直到queueB中最后一个元素弹出</span><br><span class="line">            if(!queueA.isEmpty())&#123;</span><br><span class="line">                while(queueB.size()&gt;1)&#123;</span><br><span class="line">                    queueA.add(queueB.poll());</span><br><span class="line">                &#125;</span><br><span class="line">                return queueB.poll();</span><br><span class="line">            &#125;</span><br><span class="line">            if(!queueB.isEmpty())&#123;</span><br><span class="line">                while(queueA.size()&gt;1)&#123;</span><br><span class="line">                    queueB.add(queueA.poll());</span><br><span class="line">                &#125;</span><br><span class="line">                return queueA.poll();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        public static void main(String[] args) throws Exception &#123;</span><br><span class="line">            ImplStackByQueue implStackByQueue = new ImplStackByQueue();</span><br><span class="line">            ImplStackByQueue.push(2);</span><br><span class="line">            ImplStackByQueue.push(4);</span><br><span class="line">            ImplStackByQueue.push(0);</span><br><span class="line">            System.out.println(ImplStackByQueue.pop());</span><br><span class="line">            ImplStackByQueue.push(10);</span><br><span class="line">            ImplStackByQueue.push(20);</span><br><span class="line">            System.out.println(ImplStackByQueue.pop());</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
 
       
     </div>
@@ -618,8 +621,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/05/02/hexo个人博客从0到1/" rel="next" title="hexo个人博客从0到1">
-                <i class="fa fa-chevron-left"></i> hexo个人博客从0到1
+              <a href="/2019/05/12/刷题/" rel="next" title="刷题">
+                <i class="fa fa-chevron-left"></i> 刷题
               </a>
             
           </div>
@@ -628,8 +631,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/05/19/鋈/" rel="prev" title="鋈">
-                鋈 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/05/26/递归/" rel="prev" title="递归">
+                递归 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -705,7 +708,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -728,7 +731,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">3</span>
+                      
+                    
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -839,7 +844,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#做一个执行者而不是计划者"><span class="nav-number">1.</span> <span class="nav-text">做一个执行者而不是计划者</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Beginning"><span class="nav-number">1.1.</span> <span class="nav-text">Beginning</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#牛客网刷题"><span class="nav-number">1.2.</span> <span class="nav-text">牛客网刷题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据结构与算法"><span class="nav-number">1.3.</span> <span class="nav-text">数据结构与算法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关于SQL"><span class="nav-number">1.4.</span> <span class="nav-text">关于SQL</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#阶段总结"><span class="nav-number">1.5.</span> <span class="nav-text">阶段总结</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#常见算法的时间复杂度分析和栈实现队列、队列实现栈"><span class="nav-number">1.</span> <span class="nav-text">常见算法的时间复杂度分析和栈实现队列、队列实现栈</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#写在开始"><span class="nav-number">1.1.</span> <span class="nav-text">写在开始</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#本周实现算法"><span class="nav-number">1.2.</span> <span class="nav-text">本周实现算法</span></a></li></ol></li></ol></div>
             
 
           </div>
